@@ -33,22 +33,28 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 @Entity
 public class Employee {
 
-	private @Id @GeneratedValue Long id;
-	private String firstName;
-	private String lastName;
-	private String description;
+    private @Id
+    @GeneratedValue
+    Long id;
+    private String firstName;
+    private String lastName;
+    private String description;
 
-	private @Version @JsonIgnore Long version;
+    private @Version
+    @JsonIgnore
+    Long version;
 
-	private @ManyToOne Manager manager;
+    private @ManyToOne
+    Manager manager;
 
-	private Employee() {}
+    private Employee() {
+    }
 
-	public Employee(String firstName, String lastName, String description, Manager manager) {
-		this.firstName = firstName;
-		this.lastName = lastName;
-		this.description = description;
-		this.manager = manager;
-	}
+    public Employee(String firstName, String lastName, String description, Manager manager) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.description = description;
+        this.manager = manager;
+    }
 }
 // end::code[]

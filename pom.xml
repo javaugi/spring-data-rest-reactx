@@ -15,7 +15,6 @@
     <artifactId>spring-data-rest-reactx</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <packaging>war</packaging>
-
     <name>Spring Data REST and Reactx</name>
     <description>Spring Data REST in the backend and An SPA with ReactJS in the frontend</description>
 
